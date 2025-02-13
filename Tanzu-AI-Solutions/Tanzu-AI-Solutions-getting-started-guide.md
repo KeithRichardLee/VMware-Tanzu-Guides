@@ -8,8 +8,8 @@ A guide on how to quickly get up and running with Tanzu AI Solutions with minimu
 - Deploy VMware Tanzu Operations Manager (aka Ops Man)
 - Deploy BOSH Director for vSphere
 - Deploy Small Footprint Tanzu Platform for Cloud Foundry (aka tPCF)
-- Deploy VMware Postgres for Tanzu Application Service
-- Deploy GenAI on Tanzu Platform
+- Deploy VMware Postgres tile
+- Deploy GenAI tile
 
 ## Prepare env
 ESXi host (ESXi v8.x) with the following spare capacity...
@@ -56,7 +56,7 @@ Networking
 	- https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware%20Tanzu%20Operations%20Manager 
 - Small Footprint Tanzu Platform for Cloud Foundry (~ 18 GB)
 	- https://support.broadcom.com/group/ecx/productdownloads?subfamily=Tanzu%20Platform%20for%20Cloud%20Foundry  
-- VMware Postgres for Tanzu Application Service (~ 2 GB)
+- VMware Postgres for Tanzu (~ 2 GB)
 	- https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+Tanzu+for+Postgres+on+Cloud+Foundry 
 - GenAI on Tanzu Platform for Cloud Foundry (~ 7 GB)
 	- https://support.broadcom.com/group/ecx/productdownloads?subfamily=GenAI%20on%20Tanzu%20Platform%20for%20Cloud%20Foundry 
