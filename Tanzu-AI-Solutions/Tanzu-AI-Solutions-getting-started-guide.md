@@ -10,6 +10,7 @@ A guide on how to quickly get up and running with Tanzu AI Solutions with minimu
 - Deploy Small Footprint Tanzu Platform for Cloud Foundry (aka tPCF)
 - Deploy VMware Postgres tile
 - Deploy GenAI tile
+- Deploy sample app
 
 ## Prepare env
 ESXi host (ESXi v8.x) with the following spare capacity...
