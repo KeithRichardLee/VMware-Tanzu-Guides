@@ -18,3 +18,5 @@
 
 - run nvtop
   - ```nvtop```
+
+![nvtop output](/Tanzu-AI/nvtop_output.jpg)
