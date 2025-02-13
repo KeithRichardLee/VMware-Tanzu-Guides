@@ -1,6 +1,6 @@
-# Tanzu AI Getting Started Guide
+# Tanzu AI Solutions Getting Started Guide
 
-A guide on how to quickly get up and running with Tanzu AI with minimum resources on VMware vSphere
+A guide on how to quickly get up and running with Tanzu AI Solutions with minimum resources on VMware vSphere
 
 ## High-level flow
 - Prepare env
