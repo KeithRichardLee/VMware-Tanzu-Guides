@@ -1,6 +1,6 @@
-# How to add a Healthwatch Grafana dashboard for Tanzu AI
+# How to add a Healthwatch Grafana dashboard for Tanzu AI Solutions
 
-This guide shows how to add a Grafana dashboard using Healthwatch for Tanzu AI
+This guide shows how to add a Grafana dashboard using Healthwatch for Tanzu AI Solutions
 
 ## Pre-reqs
 Infra
