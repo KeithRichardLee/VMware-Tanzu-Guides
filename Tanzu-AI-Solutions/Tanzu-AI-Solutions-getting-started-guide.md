@@ -211,14 +211,15 @@ Installation Dashboard > Review Pending changes > Apply Changes
 
 
 ## Next steps
-- Retrieve UAA Admin credentials
-- Log into Apps Manager
+- [Log into Apps Manager](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform/tanzu-platform-for-cloud-foundry/10-0/tpcf/console-login.html)
 - Create an Org
 - Create a Space
-- Install cf cli
+- [Install cf CLI](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform/tanzu-platform-for-cloud-foundry/10-0/tpcf/install-go-cli.html)
 - Deploy a sample app
-- Monitor GPU using nvtop
-- Configure a dashboard
+  - [Spring-Metal](https://github.com/nkuhn-vmw/GenAI-for-TPCF-Samples/tree/main/spring-metal)
+  - [Open WebUI](https://github.com/nkuhn-vmw/GenAI-for-TPCF-Samples/tree/main/open-webui-cf)
+- [Monitor GPU using nvtop](https://github.com/KeithRichardLee/VMware-Tanzu-Guides/blob/main/Tanzu-AI-Solutions/how-to-monitor-GPU-with-nvtop.md) (optional)
+- [Configure a Healthwatch Grafana dashboard](https://github.com/KeithRichardLee/VMware-Tanzu-Guides/blob/main/Tanzu-AI-Solutions/how-to-add-a-Healthwatch-Grafana-dashboard-for-Tanzu-AI-Solutions.md) (optional)
 
 
 ## Appendix
