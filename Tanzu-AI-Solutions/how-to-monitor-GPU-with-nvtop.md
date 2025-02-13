@@ -4,8 +4,8 @@
 
 - Retrieve "bosh commandline credentials" from Tanzu Operations Manager > BOSH Director > Credentials > bosh commandline credentials
 
-- export the env vars retrieved in previous step to your ssh session eg
-  - ```export BOSH_CLIENT=ops_manager BOSH_CLIENT_SECRET=i1GXRRESqDk9Iddvovvx_qCA2Lqyxvab BOSH_CA_CERT=/var/tempest/workspaces/default/root_ca_certificate BOSH_ENVIRONMENT=10.0.70.11 bosh```
+- Create bosh alias in ssh session using the env vars retrieved in previous step eg
+  - ```alias bosh = "BOSH_CLIENT=ops_manager BOSH_CLIENT_SECRET=i1GXRRESqDk9Iddvovvx_qCA2Lqyxvab BOSH_CA_CERT=/var/tempest/workspaces/default/root_ca_certificate BOSH_ENVIRONMENT=10.0.70.11 bosh "```
 
 - Discover the instance name for the vm which is using your GPU. Identify the vm using "VM Type" which matches what you specified in the GenAI tile for the model
   - ```bosh vms -d genai-models```
