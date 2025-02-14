@@ -200,7 +200,7 @@ Minimum config
 - Model Config
   - Ollama Models
     - Add
-      - Model name: gemma2:9b (or model of choice from ollama.com that can run/fit on your GPU. For example, gemma2:9b requires approx 9 GB vram)
+      - Model name: gemma2:2b (or model of choice from ollama.com that can run/fit on your GPU. For example, gemma2:9b requires approx 9 GB vram)
       - Model Capabilities: chat
       - VM Type: name provided in previous infrastructure config step eg gpu
       - Availability Zone: check
