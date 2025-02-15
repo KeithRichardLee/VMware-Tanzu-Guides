@@ -1,6 +1,6 @@
 # Tanzu AI Solutions Getting Started Guide
 
-A guide on how to quickly get up and running with Tanzu AI Solutions with minimum resources on VMware vSphere.
+A guide on how to quickly get up and running with [VMware Tanzu AI Solutions](https://www.vmware.com/solutions/app-platform/ai) with minimum resources on VMware vSphere.
 
 Coming soon: a script to perform most of below :raised_hands:
 
@@ -13,6 +13,7 @@ Coming soon: a script to perform most of below :raised_hands:
 - Deploy VMware Postgres tile
 - Deploy GenAI tile
 - Deploy sample app
+- Learn more
 
 ## Prepare env
 ESXi host (ESXi v8.x) with the following spare capacity...
@@ -224,6 +225,14 @@ Installation Dashboard > Review Pending changes > Apply Changes
 - [Monitor GPU using nvtop](https://github.com/KeithRichardLee/VMware-Tanzu-Guides/blob/main/Tanzu-AI-Solutions/how-to-monitor-GPU-with-nvtop.md) (optional)
 - [Configure a Healthwatch Grafana dashboard](https://github.com/KeithRichardLee/VMware-Tanzu-Guides/blob/main/Tanzu-AI-Solutions/how-to-add-a-Healthwatch-Grafana-dashboard-for-Tanzu-AI-Solutions.md) (optional)
 
+## Learn more
+- [VMware Tanzu AI Solutions landing page](https://www.vmware.com/solutions/app-platform/ai)
+- Blogs
+  - [What is AI Middleware, and Why You Need It to Safely Deliver AI Applications](https://blogs.vmware.com/tanzu/what-is-ai-middleware-and-why-you-need-it/)
+  - [Building AI Apps in 2025: Your Brilliant Ideas Deserve a Genius, Future-Proof Platform](https://blogs.vmware.com/tanzu/building-intelligent-apps-in-2025/)
+  - [It’s OK to ask why AI prototypes are not getting to production](https://blogs.vmware.com/tanzu/its-ok-to-ask-why-ai-prototypes-are-not-getting-to-production/)
+  - [Why Build GenAI Apps the Hard Way? Get an App Platform Instead!](https://blogs.vmware.com/tanzu/why-build-genai-apps-the-hard-way-get-an-app-platform-instead-2/)
+  - [Demystifying AI Integration with Cloud Foundry: A Spring AI Deep Dive](https://blogs.vmware.com/tanzu/demystifying-ai-integration-with-cloud-foundry-a-spring-ai-deep-dive/)
 
 ## Appendix
 Above steps were validated against the following...
