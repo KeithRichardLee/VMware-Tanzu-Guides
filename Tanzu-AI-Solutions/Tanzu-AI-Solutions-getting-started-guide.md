@@ -24,9 +24,11 @@ ESXi host (ESXi v8.x) with the following spare capacity...
 - Storage
   - approx 400GB
 
-GPU
+GPU *
 - Nvidia Pascal architecture or later (Turing, Volta, Ampere, Ada Lovelace, Hopper, Blackwell) GPU with as much vram as possible! eg Tesla P100 / P40 / T4 / V100 / A100, RTX 20/30/40/50 series
-  - Note: This guide has the steps for when using a "cheaper" consumer RTX GPU and using PCI passthrough (aka DirectPath I/O). Enterprise/Pro cards use NVIDIA vGPU and NVAIE instead of PCI passthrough. See [docs](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform-services/genai-on-tanzu-platform-for-cloud-foundry/10-0/ai-cf/tutorials-quickstart-vsphere.html) on how to configure the GenAI tile for vGPU/NVAIE and other requirements such as setting up a Nvidia license service.
+  - Notes:
+    - This guide has the steps for when using a "cheaper" consumer RTX GPU and using PCI passthrough (aka DirectPath I/O). Enterprise/Pro cards use NVIDIA vGPU and NVAIE instead of PCI passthrough. See [docs](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform-services/genai-on-tanzu-platform-for-cloud-foundry/10-0/ai-cf/tutorials-quickstart-vsphere.html) on how to configure the GenAI tile for vGPU/NVAIE and other requirements such as setting up a Nvidia license service.
+    - \* While of course GPUs are faster and efficent in running models, they are also very expesnive! With Tanzu AI Solutions, you can run the models also on a CPU.
 - ESXi Host BIOS
   - If your GPU is larger than 16 GB, then set PCIE MMIO to "64 Bit". See your hosts/motherboards manual on how to set this in the BIOS.
 - vCenter
