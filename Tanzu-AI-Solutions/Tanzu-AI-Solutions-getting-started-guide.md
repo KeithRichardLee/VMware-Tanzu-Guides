@@ -215,12 +215,24 @@ Minimum config
    
 Installation Dashboard > Review Pending changes > Apply Changes
 
+Congratualations you now have installed and configured Tanzu Platform for Cloud Findry and Tanzu AI Solutions. Let's go see it in action!
+
 
 ## Next steps
-- [Log into Apps Manager](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform/tanzu-platform-for-cloud-foundry/10-0/tpcf/console-login.html)
-- Create an Org
-- Create a Space
-- [Install cf CLI](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform/tanzu-platform-for-cloud-foundry/10-0/tpcf/install-go-cli.html)
+- Retrieve UAA admin credentials
+  - Tanzu Operations Manager > Tanzu Platform for Cloud Foundry > Credentials > UUA > Admin Credentials
+- Create an org and a space using Apps Manager or cf CLI for where we can deploy a sample app
+  - [Apps Manager ](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform/tanzu-platform-for-cloud-foundry/10-0/tpcf/console-login.html)
+  - cf CLI
+    - [Install cf CLI](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform/tanzu-platform-for-cloud-foundry/10-0/tpcf/install-go-cli.html)
+    - [Login](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform/tanzu-platform-for-cloud-foundry/10-0/tpcf/getting-started.html) eg
+      - `cf login -a api.sys.tanzu.lab`
+    - Create an Org eg
+      - `cf create-org tanzu-ai-solutions-org`
+    - Create a Space eg
+      - `cf create-space demos-space -o tanzu-ai-solutions-org`
+    - Target org and space eg
+      - `cf target -o tanzu-ai-solutions-org -s demos-space`
 - Deploy a sample app
   - [Spring-Metal](https://github.com/nkuhn-vmw/GenAI-for-TPCF-Samples/tree/main/spring-metal)
   - [Open WebUI](https://github.com/nkuhn-vmw/GenAI-for-TPCF-Samples/tree/main/open-webui-cf)
