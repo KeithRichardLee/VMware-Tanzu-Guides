@@ -218,10 +218,10 @@ Installation Dashboard > Review Pending changes > Apply Changes
 Congratualations you now have installed and configured Tanzu Platform for Cloud Findry and Tanzu AI Solutions. Let's go see it in action!
 
 
-## Next steps
+## Deploy a sample app
 - Retrieve UAA admin credentials
   - Tanzu Operations Manager > Tanzu Platform for Cloud Foundry > Credentials > UUA > Admin Credentials
-- Create an org and a space using Apps Manager or cf CLI for where we can deploy a sample app
+- Create an Org and a Space using either Apps Manager or cf CLI for where we can deploy a sample app
   - [Apps Manager ](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform/tanzu-platform-for-cloud-foundry/10-0/tpcf/console-login.html)
   - cf CLI
     - [Install cf CLI](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform/tanzu-platform-for-cloud-foundry/10-0/tpcf/install-go-cli.html)
@@ -231,13 +231,17 @@ Congratualations you now have installed and configured Tanzu Platform for Cloud 
       - `cf create-org tanzu-ai-solutions-org`
     - Create a Space eg
       - `cf create-space demos-space -o tanzu-ai-solutions-org`
-    - Target org and space eg
+    - Target an Org and Space eg
       - `cf target -o tanzu-ai-solutions-org -s demos-space`
 - Deploy a sample app
   - [Spring-Metal](https://github.com/nkuhn-vmw/GenAI-for-TPCF-Samples/tree/main/spring-metal)
   - [Open WebUI](https://github.com/nkuhn-vmw/GenAI-for-TPCF-Samples/tree/main/open-webui-cf)
+
+ 
+## Optional tasks
 - [Monitor GPU using nvtop](https://github.com/KeithRichardLee/VMware-Tanzu-Guides/blob/main/Tanzu-AI-Solutions/how-to-monitor-GPU-with-nvtop.md) (optional)
 - [Configure a Healthwatch Grafana dashboard](https://github.com/KeithRichardLee/VMware-Tanzu-Guides/blob/main/Tanzu-AI-Solutions/how-to-add-a-Healthwatch-Grafana-dashboard-for-Tanzu-AI-Solutions.md) (optional)
+
 
 ## Learn more
 - [VMware Tanzu AI Solutions landing page](https://www.vmware.com/solutions/app-platform/ai)
@@ -248,12 +252,13 @@ Congratualations you now have installed and configured Tanzu Platform for Cloud 
   - [Why Build GenAI Apps the Hard Way? Get an App Platform Instead!](https://blogs.vmware.com/tanzu/why-build-genai-apps-the-hard-way-get-an-app-platform-instead-2/)
   - [Demystifying AI Integration with Cloud Foundry: A Spring AI Deep Dive](https://blogs.vmware.com/tanzu/demystifying-ai-integration-with-cloud-foundry-a-spring-ai-deep-dive/)
 
+
 ## Appendix
 Above steps were validated against the following...
 - VMware vCenter 8.0.3
 - VMware ESXi 8.0.3
+- Nvidia RTX 4060 TI 16GB GPU
 - VMware Tanzu Operations Manager 3.0.37
 - Small Footprint Tanzu Platform for Cloud Foundry 10.0.2
 - VMware Postgres for Tanzu Application Service 10.0.0
 - GenAI on Tanzu Platform for Cloud Foundry 10.0.2
-- Nvidia RTX 4060 TI 16GB GPU
