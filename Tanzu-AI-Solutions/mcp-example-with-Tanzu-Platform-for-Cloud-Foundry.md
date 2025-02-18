@@ -26,7 +26,7 @@ The following are steps on how to recreate and follow along a recent live demo b
 git clone https://github.com/cpage-pivotal/cloud-foundry-mcp.git
 ./mvnw clean package
 ```
-Take note of the path to the built jar as we will need it in the next step.
+Take note of the path to the built jar in the mvnw output as we will need it in the next step.
 
 ## Add Cloud Foundary mcp server config to Claude Desktop config
 Edit `claude_desktop_config.json`
