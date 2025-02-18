@@ -85,5 +85,6 @@ keytool -importcert -file "C:\Users\Administrator\Downloads\tpcf.crt" -cacerts -
 
 ![CF MCP server](/Tanzu-AI-Solutions/assets/claude_desktop_cf_mcp_server.jpg)
 
-## Follow along with Corby and Kirte on the episode
-  
+Now you can follow along with Corby and Kirte on the [Cloud Foundry Weekly episode](https://www.youtube.com/watch?v=V-eybisoNII)!
+
+### todo: add jetbrains mcp server
