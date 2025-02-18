@@ -5,18 +5,28 @@ The following are steps on how to receate and follow along a recent live demo by
 ## Pre-reqs
 - Java JDK 17 or later installed, added to path, and JAVA_HOME configured
 - Maven 3.9.9 or later installed, added to path, and MAVEN_HOME configured
-- Claude account (free)
+- [Claude account](https://claude.ai/) (free or paid plans)
+- Cloud Foundry details
+  - API endpoint
+  - Username
+  - Password
+  - Org
+  - Space
 
 ## Downloads
 - Claude Desktop
   - https://claude.ai/download
+- Cloud Foundry MCP server
+  - https://github.com/cpage-pivotal/cloud-foundry-mcp/ 
  
-## Download and build Cloud Foundry MCP server
+## Install Claude Desktop
+
+## Download/clone and build Cloud Foundry MCP server
 ```
 git clone https://github.com/cpage-pivotal/cloud-foundry-mcp.git
 ./mvnw clean package
 ```
-Take note of the path to the built jar
+Take note of the path to the built jar as we will need it in the next step
 
 ## Add Cloud Foundary mcp server config to Claude Desktop config
 Edit `claude_desktop_config.json`
@@ -73,4 +83,7 @@ keytool -importcert -file "C:\Users\Administrator\Downloads\tpcf.crt" -cacerts -
 
 ## Start Claude Desktop and verify the Cloud Foundry MCP server is running
 
+![CF MCP server](/Tanzu-AI-Solutions/assets/claude_desktop_cf_mcp_server.jpg)
+
+## Follow along with Corby and Kirte on the episode
   
