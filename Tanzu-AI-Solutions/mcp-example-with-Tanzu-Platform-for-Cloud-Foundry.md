@@ -1,12 +1,12 @@
 # MCP (Model Context Protocol) example with Tanzu Platform for Cloud Foundry
 
-The following are steps on how to receate and follow along a recent live demo by Corby Page and Kirti Apte on [Cloud Foundry Weekly: episode 45](https://www.youtube.com/watch?v=V-eybisoNII)
+The following are steps on how to recreate and follow along a recent live demo by Corby Page and Kirti Apte on [Cloud Foundry Weekly: episode 45](https://www.youtube.com/watch?v=V-eybisoNII)
 
 ## Pre-reqs
 - Java JDK 17 or later installed, added to path, and JAVA_HOME configured
 - Maven 3.9.9 or later installed, added to path, and MAVEN_HOME configured
 - [Claude account](https://claude.ai/) (free or paid plans)
-- Cloud Foundry details
+- Cloud Foundry environment and the following details recorded
   - API endpoint
   - Username
   - Password
@@ -26,7 +26,7 @@ The following are steps on how to receate and follow along a recent live demo by
 git clone https://github.com/cpage-pivotal/cloud-foundry-mcp.git
 ./mvnw clean package
 ```
-Take note of the path to the built jar as we will need it in the next step
+Take note of the path to the built jar as we will need it in the next step.
 
 ## Add Cloud Foundary mcp server config to Claude Desktop config
 Edit `claude_desktop_config.json`
@@ -52,7 +52,7 @@ Edit `claude_desktop_config.json`
 }
 ```
 
-For example, on windows (take note of the double \\ for the path)
+See below for an example. Note: if using Windows, use double \\ for the path.
 ```
 {
   "mcpServers": {
@@ -76,7 +76,7 @@ For example, on windows (take note of the double \\ for the path)
 ```
 
 ## Add Cloud Foundry cert to keystore (optional)
-If your Cloud Foundry is using self-signed certs, you will need to add the cert to the keystore eg
+If your Cloud Foundry is using self-signed certs, you will need to add the cert to the java keystore eg
 ```
 keytool -importcert -file "C:\Users\Administrator\Downloads\tpcf.crt" -cacerts -alias tpcf -storepass changeit
 ```
