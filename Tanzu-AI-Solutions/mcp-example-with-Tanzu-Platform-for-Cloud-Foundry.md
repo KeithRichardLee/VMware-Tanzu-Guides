@@ -52,7 +52,7 @@ Edit `claude_desktop_config.json`
 }
 ```
 
-See below for an example. Note: if using Windows, use double \\ for the path to the jar.
+See below for an example. Note: if using Windows, use double \\ for the path to the jar we built in the previous step.
 ```
 {
   "mcpServers": {
