@@ -13,7 +13,7 @@ The following are steps on how to recreate and follow along a recent live demo b
   - Org name
   - Space name
 
-## Claude
+## Anthropic Claude
 - Sign up for a [Claude account](https://claude.ai/) (free or paid plans)
 - Download and install [Claude Desktop](https://claude.ai/download)
 
@@ -23,7 +23,7 @@ The following are steps on how to recreate and follow along a recent live demo b
 - Install plugin
   - IntelliJ > IDE settings > Plugins > Install Plugin from Disk
 
-### Configure Claude Desktop to use JetBrains MCP Server
+### Add JetBrains MCP Server config to Claude Desktop config
 - Claude Desktop > Setings > Developer > Edit Config > open `claude_desktop_config.json` in editor of choice
 - Add the following configuration to the `claude_desktop_config.json` file
 ```
