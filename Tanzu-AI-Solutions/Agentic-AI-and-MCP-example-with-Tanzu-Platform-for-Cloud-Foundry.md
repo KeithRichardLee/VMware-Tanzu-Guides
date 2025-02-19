@@ -26,7 +26,7 @@ The following are steps on how to recreate and follow along a recent live demo b
 ### Add JetBrains MCP Server config to Claude Desktop config
 - Claude Desktop > Settings > Developer > Edit Config > open `claude_desktop_config.json` in editor of choice
 - Add the following configuration to the `claude_desktop_config.json` file
-```
+```json
   {
     "mcpServers": {
       "jetbrains": {
@@ -41,7 +41,7 @@ The following are steps on how to recreate and follow along a recent live demo b
 
 ## Cloud Foundry MCP server
 ### Download and build the Cloud Foundry MCP server
-```
+```bash
 git clone https://github.com/cpage-pivotal/cloud-foundry-mcp.git
 ./mvnw clean package
 ```
@@ -50,7 +50,7 @@ Take note of the path to the built jar in the mvnw output as we will need it in 
 ### Add Cloud Foundry MCP server config to Claude Desktop config
 Claude Desktop > Settings > Developer > Edit Config > open `claude_desktop_config.json` in editor of choice and add the Cloud Foundry MCP server config to the existing config
 
-```
+```json
 {
   "mcpServers": {
     "cloud-foundry": {
@@ -74,7 +74,7 @@ Claude Desktop > Settings > Developer > Edit Config > open `claude_desktop_confi
 
 See below for an example where both JetBrains and Cloud Foundry MCP servers are added to the Claude Desktop configuration. 
   - Note: if using Windows, use double \\ for the path to the jar we built in the previous step.
-```
+```json
 {
   "mcpServers": {
     "jetbrains": {
@@ -102,7 +102,7 @@ See below for an example where both JetBrains and Cloud Foundry MCP servers are 
 
 ## Add Cloud Foundry cert to keystore (optional)
 If your Cloud Foundry is using self-signed certs, you will need to add the cert to the java keystore eg
-```
+```bash
 keytool -importcert -file "C:\Users\Administrator\Downloads\tpcf.crt" -cacerts -alias tpcf -storepass changeit
 ```
 
@@ -112,7 +112,7 @@ keytool -importcert -file "C:\Users\Administrator\Downloads\tpcf.crt" -cacerts -
 ![MCP servers running](/Tanzu-AI-Solutions/assets/claude_desktop_jetbrains_mcp_server.jpg)
 
 ## Download and open Spring-Metal in IntelliJ
-```
+```bash
 git clone https://github.com/nkuhn-vmw/GenAI-for-TPCF-Samples.git
 ```
 
