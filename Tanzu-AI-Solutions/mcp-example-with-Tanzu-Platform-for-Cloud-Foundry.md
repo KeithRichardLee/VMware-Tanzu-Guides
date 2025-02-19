@@ -109,6 +109,8 @@ keytool -importcert -file "C:\Users\Administrator\Downloads\tpcf.crt" -cacerts -
 ## Restart Claude Desktop and verify the JetBrains and Cloud Foundry MCP servers are running
 - Claude Desktop > Setings > Developer
 
+![MCP servers running](/Tanzu-AI-Solutions/assets/claude_desktop_jetbrains_mcp_server.jpg)
+
 ## Download and open Spring-Metal in IntelliJ
 ```
 git clone https://github.com/nkuhn-vmw/GenAI-for-TPCF-Samples.git
