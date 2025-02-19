@@ -3,7 +3,7 @@
 The following are steps on how to recreate and follow along a recent live demo by Corby Page and Kirti Apte on [Cloud Foundry Weekly: episode 45](https://www.youtube.com/watch?v=V-eybisoNII)
 
 ## Pre-reqs
-- [IntelliJ IDEA](https://www.jetbrains.com/idea/download/) (Ultimate or Commuity Edition)
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/download/) (Ultimate or Community Edition)
 - [Java JDK 17](https://www.oracle.com/java/technologies/downloads/#java17) or later installed, added to path, and JAVA_HOME configured
 - [Maven 3.9.9](https://maven.apache.org/download.cgi) or later installed, added to path, and MAVEN_HOME configured
 - A running Cloud Foundry environment and the following details recorded (see guide here on [how to install Tanzu Platform for Cloud Foundry](https://github.com/KeithRichardLee/VMware-Tanzu-Guides/blob/main/Tanzu-AI-Solutions/Tanzu-AI-Solutions-getting-started-guide.md))
