@@ -239,6 +239,7 @@ Congratualations you now have installed and configured Tanzu Platform for Cloud 
 
  
 ## Optional tasks
+- [Agentic AI and MCP (Model Context Protocol) example with Tanzu Platform for Cloud Foundry](/Tanzu-AI-Solutions/Agentic-AI-and-MCP-example-with-Tanzu-Platform-for-Cloud-Foundry.md)
 - [Monitor GPU using nvtop](https://github.com/KeithRichardLee/VMware-Tanzu-Guides/blob/main/Tanzu-AI-Solutions/how-to-monitor-GPU-with-nvtop.md)
 - [Configure a Healthwatch Grafana dashboard](https://github.com/KeithRichardLee/VMware-Tanzu-Guides/blob/main/Tanzu-AI-Solutions/how-to-add-a-Healthwatch-Grafana-dashboard-for-Tanzu-AI-Solutions.md)
 
