@@ -24,7 +24,7 @@ The following are steps on how to recreate and follow along a recent live demo b
   - IntelliJ > IDE settings > Plugins > Install Plugin from Disk
 
 ### Add JetBrains MCP Server config to Claude Desktop config
-- Claude Desktop > Setings > Developer > Edit Config > open `claude_desktop_config.json` in editor of choice
+- Claude Desktop > Settings > Developer > Edit Config > open `claude_desktop_config.json` in editor of choice
 - Add the following configuration to the `claude_desktop_config.json` file
 ```
   {
@@ -47,8 +47,8 @@ git clone https://github.com/cpage-pivotal/cloud-foundry-mcp.git
 ```
 Take note of the path to the built jar in the mvnw output as we will need it in the next step
 
-### Add Cloud Foundary MCP server config to Claude Desktop config
-Claude Desktop > Setings > Developer > Edit Config > open `claude_desktop_config.json` in editor of choice and add the Cloud Foundry MCP server config to the existing config
+### Add Cloud Foundry MCP server config to Claude Desktop config
+Claude Desktop > Settings > Developer > Edit Config > open `claude_desktop_config.json` in editor of choice and add the Cloud Foundry MCP server config to the existing config
 
 ```
 {
@@ -72,7 +72,7 @@ Claude Desktop > Setings > Developer > Edit Config > open `claude_desktop_config
 }
 ```
 
-See below for an example where both JetBrains and Cloud Foudry MCP servers are added to the Claude Desktop configuration. 
+See below for an example where both JetBrains and Cloud Foundry MCP servers are added to the Claude Desktop configuration. 
   - Note: if using Windows, use double \\ for the path to the jar we built in the previous step.
 ```
 {
@@ -107,7 +107,7 @@ keytool -importcert -file "C:\Users\Administrator\Downloads\tpcf.crt" -cacerts -
 ```
 
 ## Restart Claude Desktop and verify the JetBrains and Cloud Foundry MCP servers are running
-- Claude Desktop > Setings > Developer
+- Claude Desktop > Settings > Developer
 
 ![MCP servers running](/Tanzu-AI-Solutions/assets/claude_desktop_jetbrains_mcp_server.jpg)
 
