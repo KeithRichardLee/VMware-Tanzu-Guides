@@ -1,4 +1,4 @@
-# MCP (Model Context Protocol) example with Tanzu Platform for Cloud Foundry
+# Agentic AI and MCP (Model Context Protocol) example with Tanzu Platform for Cloud Foundry
 
 The following are steps on how to recreate and follow along a recent live demo by Corby Page and Kirti Apte on [Cloud Foundry Weekly: episode 45](https://www.youtube.com/watch?v=V-eybisoNII)
 
