@@ -117,4 +117,4 @@ git clone https://github.com/nkuhn-vmw/GenAI-for-TPCF-Samples.git
 ```
 
 ## Congratulations!!
-Now you can follow along with Corby and Kirte on the [Cloud Foundry Weekly episode](https://www.youtube.com/watch?v=V-eybisoNII)!
+Now you can follow along with Corby and Kirte on the [Cloud Foundry Weekly episode 45](https://www.youtube.com/watch?v=V-eybisoNII)!
