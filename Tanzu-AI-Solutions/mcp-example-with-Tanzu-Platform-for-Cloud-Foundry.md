@@ -3,33 +3,53 @@
 The following are steps on how to recreate and follow along a recent live demo by Corby Page and Kirti Apte on [Cloud Foundry Weekly: episode 45](https://www.youtube.com/watch?v=V-eybisoNII)
 
 ## Pre-reqs
-- Java JDK 17 or later installed, added to path, and JAVA_HOME configured
-- Maven 3.9.9 or later installed, added to path, and MAVEN_HOME configured
-- [Claude account](https://claude.ai/) (free or paid plans)
-- Cloud Foundry environment and the following details recorded
+- [IntelliJ IDEA](https://www.jetbrains.com/idea/download/) (Ultimate or Commuity Edition)
+- [Java JDK 17](https://www.oracle.com/java/technologies/downloads/#java17) or later installed, added to path, and JAVA_HOME configured
+- [Maven 3.9.9](https://maven.apache.org/download.cgi) or later installed, added to path, and MAVEN_HOME configured
+- A running Cloud Foundry environment and the following details recorded (see guide here on [how to install Tanzu Platform for Cloud Foundry](https://github.com/KeithRichardLee/VMware-Tanzu-Guides/blob/main/Tanzu-AI-Solutions/Tanzu-AI-Solutions-getting-started-guide.md))
   - API endpoint
   - Username
   - Password
-  - Org
-  - Space
+  - Org name
+  - Space name
 
-## Downloads
-- Claude Desktop
-  - https://claude.ai/download
-- Cloud Foundry MCP server
-  - https://github.com/cpage-pivotal/cloud-foundry-mcp/ 
- 
-## Install Claude Desktop
+## Claude
+- Sign up for a [Claude account](https://claude.ai/) (free or paid plans)
+- Download and install [Claude Desktop](https://claude.ai/download)
 
-## Download/clone and build Cloud Foundry MCP server
+## JetBrains MCP Server
+### Install JetBrains MCP Server plugin into IDE
+- Download [JetBrains MCP Server plugin](https://plugins.jetbrains.com/plugin/26071-mcp-server)
+- Install plugin
+  - IntelliJ > IDE settings > Plugins > Install Plugin from Disk
+
+### Configure Claude Desktop to use JetBrains MCP Server
+- Claude Desktop > Setings > Developer > Edit Config > open `claude_desktop_config.json` in editor of choice
+- Add the following configuration to the `claude_desktop_config.json` file
+```
+  {
+    "mcpServers": {
+      "jetbrains": {
+        "command": "npx",
+        "args": ["-y", "@jetbrains/mcp-proxy"]
+      }
+    }
+  }
+```
+
+
+
+## Cloud Foundry MCP server
+### Download and build the Cloud Foundry MCP server
 ```
 git clone https://github.com/cpage-pivotal/cloud-foundry-mcp.git
 ./mvnw clean package
 ```
-Take note of the path to the built jar in the mvnw output as we will need it in the next step.
+Take note of the path to the built jar in the mvnw output as we will need it in the next step
 
-## Add Cloud Foundary mcp server config to Claude Desktop config
-Edit `claude_desktop_config.json`
+### Add Cloud Foundary MCP server config to Claude Desktop config
+Claude Desktop > Setings > Developer > Edit Config > open `claude_desktop_config.json` in editor of choice and add the Cloud Foundry MCP server config to the existing config
+
 ```
 {
   "mcpServers": {
@@ -52,10 +72,15 @@ Edit `claude_desktop_config.json`
 }
 ```
 
-See below for an example. Note: if using Windows, use double \\ for the path to the jar we built in the previous step.
+See below for an example where both JetBrains and Cloud Foudry MCP servers are added to the Claude Desktop configuration. 
+  - Note: if using Windows, use double \\ for the path to the jar we built in the previous step.
 ```
 {
   "mcpServers": {
+    "jetbrains": {
+      "command": "npx",
+      "args": ["-y", "@jetbrains/mcp-proxy"]
+    },
     "cloud-foundry": {
       "command": "java",
       "args": [
@@ -81,10 +106,8 @@ If your Cloud Foundry is using self-signed certs, you will need to add the cert 
 keytool -importcert -file "C:\Users\Administrator\Downloads\tpcf.crt" -cacerts -alias tpcf -storepass changeit
 ```
 
-## Start Claude Desktop and verify the Cloud Foundry MCP server is running
+## Restart Claude Desktop and verify the JetBrains and Cloud Foundry MCP servers are running
 
 ![CF MCP server](/Tanzu-AI-Solutions/assets/claude_desktop_cf_mcp_server.jpg)
 
 Now you can follow along with Corby and Kirte on the [Cloud Foundry Weekly episode](https://www.youtube.com/watch?v=V-eybisoNII)!
-
-### todo: add jetbrains mcp server
