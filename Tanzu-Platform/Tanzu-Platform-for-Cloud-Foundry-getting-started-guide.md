@@ -1,4 +1,4 @@
-# Tanzu Platform for Cloud Foundry Quick Start
+# Tanzu Platform for Cloud Foundry Geting Started Guide
 
 A guide on how to quickly get up and running with [VMware Tanzu Platform for Cloud Foundry](https://www.vmware.com/products/app-platform/runtimes#cloud-foundry) with minimum resources on VMware vSphere.
 
