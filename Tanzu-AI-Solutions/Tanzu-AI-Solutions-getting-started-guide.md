@@ -215,7 +215,7 @@ Minimum config
    
 Installation Dashboard > Review Pending changes > Apply Changes
 
-Congratualations you now have installed and configured Tanzu Platform for Cloud Findry and Tanzu AI Solutions. Let's go see it in action!
+Congratualations you now have installed and configured Tanzu Platform for Cloud Foundry and Tanzu AI Solutions. Let's go see it in action!
 
 
 ## Deploy a sample app
