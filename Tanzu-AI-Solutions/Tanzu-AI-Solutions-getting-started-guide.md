@@ -148,7 +148,7 @@ Minimum config
     - Generate RSA Certificate
       - Domain names: *.apps.tanzu.lab, *.login.sys.tanzu.lab, *.uaa.sys.tanzu.lab, *.sys.tanzu.lab, *.tanzu.lab
 - CredHub
-  - Internal encryption provide keys
+  - Internal encryption provider keys
     - Add 
       - Name
       - Key (must be at least 20 characters long)
