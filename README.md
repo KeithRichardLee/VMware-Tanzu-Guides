@@ -7,4 +7,4 @@
 - [How to monitor GPU using nvtop](/Tanzu-AI-Solutions/how-to-monitor-GPU-with-nvtop.md)
 
 ## Tanzu Platform
-- [Tanzu Platform for Cloud Foundry getting start guide](/Tanzu-Platform/Tanzu-Platform-for-Cloud-Foundry-getting-started-guide.md)
+- [Tanzu Platform for Cloud Foundry getting started guide](/Tanzu-Platform/Tanzu-Platform-for-Cloud-Foundry-getting-started-guide.md)
