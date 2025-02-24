@@ -117,8 +117,6 @@ Minimum config
       - Generate RSA Certificate
         - Domain names: *.apps.tanzu.lab, *.login.sys.tanzu.lab, *.uaa.sys.tanzu.lab, *.sys.tanzu.lab, *.tanzu.lab
   - TLS termination point: Gorouter
-- App Developer Controls
-  - Maximum disk quota per app: 6144 (need to bump up from 2048 so can run Open WebUI app)
 - App Securtiy Groups
   - You are responsible for setting the appropriate ASGs after TPCF finishes deploying: X
 - UAA
@@ -126,7 +124,7 @@ Minimum config
     - Generate RSA Certificate
       - Domain names: *.apps.tanzu.lab, *.login.sys.tanzu.lab, *.uaa.sys.tanzu.lab, *.sys.tanzu.lab, *.tanzu.lab
 - CredHub
-  - Internal encryption provide keys
+  - Internal encryption provider keys
     - Add 
       - Name
       - Key (must be at least 20 characters long)
