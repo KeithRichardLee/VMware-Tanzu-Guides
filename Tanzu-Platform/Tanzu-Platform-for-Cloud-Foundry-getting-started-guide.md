@@ -140,13 +140,13 @@ Congratualations you now have installed and configured Tanzu Platform for Cloud 
 
 ## Deploy a sample app
 - Retrieve UAA admin credentials
-  - Tanzu Operations Manager > Tanzu Platform for Cloud Foundry > Credentials > UUA > Admin Credentials
+  - Tanzu Operations Manager > Tanzu Platform for Cloud Foundry > Credentials > UAA > Admin Credentials
 - Create an Org and a Space using either Apps Manager or cf CLI for where we can deploy a sample app
   - [Apps Manager ](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform/tanzu-platform-for-cloud-foundry/10-0/tpcf/console-login.html)
   - cf CLI
     - [Install cf CLI](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform/tanzu-platform-for-cloud-foundry/10-0/tpcf/install-go-cli.html)
     - [Login](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform/tanzu-platform-for-cloud-foundry/10-0/tpcf/getting-started.html) eg
-      - `cf login -a api.sys.tanzu.lab`
+      - `cf login -a api.sys.tanzu.lab --skip-ssl-validation`
     - Create an Org eg
       - `cf create-org tanzu-demos-org`
     - Create a Space eg
@@ -154,12 +154,18 @@ Congratualations you now have installed and configured Tanzu Platform for Cloud 
     - Target an Org and Space eg
       - `cf target -o tanzu-demos-org -s demos-space`
 - Deploy a sample app
-  - 
+  - Download spring-music
+    - `git clone https://github.com/cloudfoundry-samples/spring-music.git`
+  - Build jar file
+    - `./gradlew clean assemble`
+  - Run app
+    - `cf push`
+  - Verify app is running, retrieve route, and open app
+    - `cf apps` 
 
 
- 
 ## Optional tasks
-
+  - [Deploy Tanzu AI Solutions](/Tanzu-AI-Solutions/Tanzu-AI-Solutions-getting-started-guide.md)
 
 
 ## Learn more
