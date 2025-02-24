@@ -157,7 +157,10 @@ Congratualations you now have installed and configured Tanzu Platform for Cloud 
   - Download spring-music
     - `git clone https://github.com/cloudfoundry-samples/spring-music.git`
   - Build jar file
-    - `./gradlew clean assemble`
+    - ```
+      cd spring-music
+      ./gradlew clean assemble
+      ```
   - Run app
     - `cf push`
   - Verify app is running, retrieve route, and open app
