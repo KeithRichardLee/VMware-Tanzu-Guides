@@ -14,13 +14,13 @@ Coming soon: a script to perform most of below :raised_hands:
 - Learn more
 
 ## Prepare env
-ESXi host (ESXi v8.x) with the following spare capacity...
+ESXi host (ESXi v7.x or v8.x) with the following spare capacity...
 - Compute
-  - approx 40 vCPU, although only uses approx 5 GHz
+  - approx 18 vCPU, although only uses approx 4 GHz
 - Memory
-  - approx 90 GB
+  - approx 60 GB
 - Storage
-  - approx 400GB
+  - approx 300GB
 
 
 Networking
