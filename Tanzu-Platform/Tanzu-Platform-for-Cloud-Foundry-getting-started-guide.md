@@ -2,7 +2,7 @@
 
 A guide on how to quickly get up and running with [VMware Tanzu Platform for Cloud Foundry](https://www.vmware.com/products/app-platform/runtimes#cloud-foundry) with minimum resources on VMware vSphere.
 
-Coming soon: a script to perform most of below :raised_hands:
+You can follow the manual steps below, or use this [script](https://github.com/KeithRichardLee/Tanzu-Platform-for-Cloud-Foundry-automated-install) that has automated all of below :raised_hands:
 
 ## High-level flow
 - Prepare env
