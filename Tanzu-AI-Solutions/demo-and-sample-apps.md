@@ -1,6 +1,6 @@
 # Demo and Sample Apps
 
-A collection of sample and demos apps written with Spring Boot and Spring AI
+A collection of sample and demo apps written with Spring Boot and Spring AI
 
 ## GenAI
 - Spring Metal
