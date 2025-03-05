@@ -23,7 +23,7 @@ ESXi host with the following spare capacity...
 - Memory
   - approx 16 GB
 - Storage
-  - approx 137GB (thin)
+  - approx 137 GB (thin)
 
 Networking
   - IP Addresses
