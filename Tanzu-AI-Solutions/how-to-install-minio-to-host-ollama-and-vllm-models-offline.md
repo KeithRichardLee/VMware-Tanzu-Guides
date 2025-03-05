@@ -147,8 +147,8 @@ bosh -d minio deploy manifest.yml \
 
 ## Update DNS
 - Retrieve IP of MinIO server
-  - bosh -d minio vms
-- Create/update DNS record using the MinIO uri specified in vars/minio-vars-file.yml and ip retrieved from previous command
+  - `bosh -d minio vms`
+- Create/update DNS record using the MinIO uri specified in vars/minio-vars-file.yml and IP retrieved from previous command
 
 
 ## Configure MinIO server
