@@ -153,7 +153,7 @@ bosh -d minio deploy manifest.yml \
 
 ## Configure MinIO server
 Access MinIO console
-- Open a browser to http://<minio-uri>:9001
+- Open a browser to http://\<minio-uri\>:9001
 - Login with credentials specified in vars/minio-vars-file.yml 
 
 Create bucket
