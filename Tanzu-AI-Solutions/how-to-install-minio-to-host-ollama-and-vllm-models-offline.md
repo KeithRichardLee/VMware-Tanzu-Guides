@@ -71,7 +71,7 @@ minio_disk_type: 102400
 minio_root_user: "root"
 minio_root_password: "VMware1!"
 
-minio_uri: minio.keithlee.lab
+minio_uri: minio.tanzu.lab
 ```
 
 Create a MinIO manifest file
