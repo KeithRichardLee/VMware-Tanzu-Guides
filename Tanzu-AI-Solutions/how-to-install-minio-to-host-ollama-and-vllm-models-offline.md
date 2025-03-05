@@ -1,4 +1,4 @@
-# How to install MinIO to host Ollama and vLLM models offline
+# How to install MinIO object storage server to host Ollama and vLLM models offline
 
 With Tanzu AI Solutions, by default, models are pulled down from the internet during installation eg from [Ollama](https://ollama.com/) and [Hugging Face](https://huggingface.co/). This most likely is not an option in most environments and therefore need a method to store models locally. Tanzu AI Solutions supports offline models. 
 
