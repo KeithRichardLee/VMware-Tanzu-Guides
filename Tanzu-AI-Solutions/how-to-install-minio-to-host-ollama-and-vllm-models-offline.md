@@ -39,7 +39,7 @@ Networking
   - Tanzu Operations Manager > Settings > Advanced Options > Download root ca cert
 - Retrieve BOSH commandline credentials
   - Tanzu Operations Manager > BOSH Director > Credentials > bosh commandline credentials
-- Create alias on your workstation (update the path to where you downloaded the bosh cert to)
+- Create alias on your workstation (update the path to where you downloaded the cert to)
 ```bash
 alias bosh="BOSH_CLIENT=ops_manager BOSH_CLIENT_SECRET=i1GXRRESqDh9Iddtovvx_qCA2Lqyzvab BOSH_CA_CERT=/home/tanzu/root_ca_certificate BOSH_ENVIRONMENT=10.0.70.11 bosh "
 ```
