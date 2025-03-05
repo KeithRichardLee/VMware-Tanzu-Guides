@@ -2,7 +2,7 @@
 
 With Tanzu AI Solutions, by default, models are pulled down from the internet during installation eg from [Ollama](https://ollama.com/) and [Hugging Face](https://huggingface.co/). This most likely is not an option in most environments and therefore need a method to store models locally. Tanzu AI Solutions supports offline models. 
 
-While many people/companies already have a means to store objects locally eg NFS, S3, WebDAV etc and serve them over http(s), this guide will cover how to install a MinIO server using BOSH. There are many alternative ways to install a MinIO server but this guide will use BOSH as we already have it running from the Tanzu Plaform install. Note, Tanzu Platform has a [MinIO tile](https://support.broadcom.com/group/ecx/productdownloads?subfamily=Minio%20Internal%20Blobstore%20for%20VMware%20Tanzu) for a simplified install but that requires a license from MinIO.  
+While many people/companies already have a means to store objects locally eg NFS, S3, WebDAV etc and serve them over http(s), this guide will cover how to install a MinIO server using BOSH. There are many alternative ways to install a MinIO server but this guide will use BOSH as we already have it running from the Tanzu Platform install. Note, Tanzu Platform has a [MinIO tile](https://support.broadcom.com/group/ecx/productdownloads?subfamily=Minio%20Internal%20Blobstore%20for%20VMware%20Tanzu) for a simplified install but that requires a license from MinIO.  
 
 
 ## High-level flow
@@ -11,7 +11,7 @@ While many people/companies already have a means to store objects locally eg NFS
 - Download MinIO BOSH Release
 - Prepare install files
 - Deploy MinIO BOSH Release
-- Update NDS
+- Update DNS
 - Configure MinIO server
 - Upload models
 
@@ -175,7 +175,7 @@ Note, the port to read/write to the bucket with your client is 9000 eg http://mi
 See [here](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform-services/genai-on-tanzu-platform-for-cloud-foundry/10-0/ai-cf/tutorials-offline-model-support.html) to learn more about preparing models for offline use.
 
 ## Uninstall MinIO
-If you wish to uninstlal MinIO server, run the following...
+If you wish to uninstall MinIO server, run the following...
 ```bash
 bosh delete-deployment 0d minio-rnd
 ```
