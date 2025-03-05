@@ -4,6 +4,8 @@ With Tanzu AI Solutions, by default, models are pulled down from the internet du
 
 While many people/companies already have a means to store objects locally eg NFS, S3, WebDAV etc and serve them over http(s), this guide will cover how to install a MinIO object storage server using BOSH. There are many alternative ways to install a MinIO server but this guide will use BOSH as we already have it running from the Tanzu Platform install. Note, Tanzu Platform has a [MinIO tile](https://support.broadcom.com/group/ecx/productdownloads?subfamily=Minio%20Internal%20Blobstore%20for%20VMware%20Tanzu) for a simplified install but that requires a license from MinIO.  
 
+Note: MinIO BOSH Release is licensed under [GNU AFFERO GENERAL PUBLIC LICENSE](https://www.gnu.org/licenses/agpl-3.0.en.html) 3.0 or later.
+
 
 ## High-level flow
 - Prepare env
