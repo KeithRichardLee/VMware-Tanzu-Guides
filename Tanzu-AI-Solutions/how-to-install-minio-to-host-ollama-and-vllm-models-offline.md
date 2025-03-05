@@ -174,5 +174,5 @@ See [here](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform-services/ge
 ## Uninstall MinIO
 If you wish to uninstall MinIO server, run the following...
 ```bash
-bosh delete-deployment 0d minio-rnd
+bosh delete-deployment -d minio
 ```
