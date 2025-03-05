@@ -128,7 +128,7 @@ update:
 ```
 
 
-## Deploy MinIO boshrelease
+## Deploy MinIO BOSH Release
 
 
 ```bash
