@@ -45,7 +45,7 @@ Networking
     ```bash
   alias bosh="BOSH_CLIENT=ops_manager BOSH_CLIENT_SECRET=i1GXRRESqDh9Iddtovvx_qCA2Lqyzvab BOSH_CA_CERT=/home/tanzu/root_ca_certificate BOSH_ENVIRONMENT=10.0.70.11 bosh "
     ```
-- Verify bosh cli
+- Verify bosh alias is working eg
   - `bosh vms`
 
 ## Download MinIO BOSH Release
