@@ -43,11 +43,11 @@ Networking
   - Tanzu Operations Manager > Settings > Advanced Options > Download root ca cert
 - Retrieve BOSH commandline credentials
   - Tanzu Operations Manager > BOSH Director > Credentials > bosh commandline credentials
-- Create alias on your workstation (update the path to where you downloaded the cert to) eg
+- Create an alias on your workstation using the commandline string retrieved in the previous step (update the path to where you downloaded the cert to) eg
     ```bash
   alias bosh="BOSH_CLIENT=ops_manager BOSH_CLIENT_SECRET=i1GXRRESqDh9Iddtovvx_qCA2Lqyzvab BOSH_CA_CERT=/home/tanzu/root_ca_certificate BOSH_ENVIRONMENT=10.0.70.11 bosh "
     ```
-- Verify bosh alias is working eg
+- Verify that the bosh alias is working eg
   - `bosh vms`
 
 ## Download MinIO BOSH Release
@@ -133,8 +133,6 @@ update:
 
 
 ## Deploy MinIO BOSH Release
-
-
 ```bash
 source ../src/blobs-versions.env
 source ../rel.env
@@ -169,7 +167,7 @@ Configure access
   - Save
 
 ## Upload models
-Upload models to the models bucket using your client of choice eg [MinIO Client](https://min.io/docs/minio/linux/reference/minio-mc.html) (aka mc), [Cyberduck](https://cyberduck.io/) (use S3 http depricated path style request profile), etc 
+Upload models to the "models" bucket using the MinIO console or your client of choice eg [MinIO Client](https://min.io/docs/minio/linux/reference/minio-mc.html) (aka mc), [Cyberduck](https://cyberduck.io/) (use S3 http depricated path style request profile), etc 
 
 Note, the port to read/write to the bucket with your client is 9000 eg http://minio.tanzu.lab:9000
 
