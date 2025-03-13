@@ -22,4 +22,7 @@ A collection of sample and demo apps written with Spring Boot and Spring AI
   - https://github.com/cpage-pivotal/time-mcp
 - Spring Application Advisor MCP Server
   - A MCP server which provides an LLM interface for interacting with Spring Application Advisor
-  - https://github.com/cpage-pivotal/app-advisor-mcp 
+  - https://github.com/cpage-pivotal/app-advisor-mcp
+- cf-kaizen
+  - MCP servers which allow to chat with one or more Cloud Foundry foundations
+  - https://github.com/cf-toolsuite/cf-kaizen 
