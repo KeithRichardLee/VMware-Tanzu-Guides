@@ -15,12 +15,9 @@ You can follow the manual steps below, or use this [script](https://github.com/K
 
 ## Prepare env
 ESXi host (ESXi v7.x or v8.x) with the following spare capacity...
-- Compute
-  - approx 18 vCPU, although only uses approx 4 GHz
-- Memory
-  - approx 60 GB
-- Storage
-  - approx 300GB
+  - Compute: ~18 vCPU, although only uses approx 4 GHz
+  - Memory: ~60 GB
+  - Storage: ~300GB
 
 
 Networking
@@ -31,17 +28,18 @@ Networking
     - 5x TPCF (Gorouter, blobstore, compute, control, database)
     - x various errands, compliations, workers
 - DNS service
-  - ops manager eg opsman.tanzu.lab
-  - system wildcard eg *.sys.tanzu.lab which will resolve to the gorouter IP
-  - apps wildcard eg *.apps.tanzu.lab which will resolve to the gorouter IP
+  - 3 records created
+    - 1x Tanzu Operations Manager eg opsman.tanzu.lab
+    - 1x TPCF system wildcard eg *.sys.tpcf.tanzu.lab which will resolve to the gorouter IP
+    - 1x TPCF apps wildcard eg *.apps.tpcf.tanzu.lab which will resolve to the gorouter IP
 - NTP service
 
 
 
 ## Download bits
-- VMware Tanzu Operations Manager (~ 6 GB)
+- VMware Tanzu Operations Manager
 	- https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware%20Tanzu%20Operations%20Manager 
-- Small Footprint Tanzu Platform for Cloud Foundry (~ 18 GB)
+- Small Footprint Tanzu Platform for Cloud Foundry
 	- https://support.broadcom.com/group/ecx/productdownloads?subfamily=Tanzu%20Platform%20for%20Cloud%20Foundry  
 
 
@@ -142,7 +140,8 @@ Congratualations you now have installed and configured Tanzu Platform for Cloud 
 - Retrieve UAA admin credentials
   - Tanzu Operations Manager > Tanzu Platform for Cloud Foundry > Credentials > UAA > Admin Credentials
 - Create an Org and a Space using either Apps Manager or cf CLI for where we can deploy a sample app
-  - [Apps Manager ](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform/tanzu-platform-for-cloud-foundry/10-0/tpcf/console-login.html)
+  - Apps Manager
+    - See docs [here](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform/tanzu-platform-for-cloud-foundry/10-0/tpcf/console-login.html) on how to access and use Apps Manager 
   - cf CLI
     - [Install cf CLI](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform/tanzu-platform-for-cloud-foundry/10-0/tpcf/install-go-cli.html)
     - [Login](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform/tanzu-platform-for-cloud-foundry/10-0/tpcf/getting-started.html) eg
