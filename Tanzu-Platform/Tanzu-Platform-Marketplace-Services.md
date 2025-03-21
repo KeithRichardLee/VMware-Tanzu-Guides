@@ -40,6 +40,21 @@ Spring Cloud Config Server and Spring Cloud Service Registry</br>
 :floppy_disk: [Download](https://support.broadcom.com/group/ecx/productdownloads?subfamily=Spring%20Cloud%20Services%20for%20VMware%20Tanzu) &nbsp;&nbsp;|&nbsp;&nbsp; :book: [Docs](https://techdocs.broadcom.com/us/en/vmware-tanzu/spring/spring-cloud-services-for-cloud-foundry/3-3/scs-tanzu/index.html)</br></br>
 
 
+## Public Cloud Service Brokers
+### Service Broker for AWS
+Connector that lets apps access services running on AWS</br>
+:floppy_disk: [Download](https://support.broadcom.com/group/ecx/productdownloads?subfamily=Tanzu%20Cloud%20Service%20Broker%20for%20AWS) &nbsp;&nbsp;|&nbsp;&nbsp; :book: [Docs](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform-services/tanzu-cloud-service-broker-for-aws/1-14/csb-aws/index.html)</br></br>
+
+### Service Broker for GCP
+Connector that lets apps access services running on GCP</br>
+:floppy_disk: [Download](https://support.broadcom.com/group/ecx/productdownloads?subfamily=Tanzu%20Cloud%20Service%20Broker%20for%20GCP) &nbsp;&nbsp;|&nbsp;&nbsp; :book: [Docs](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform-services/tanzu-cloud-service-broker-for-gcp/1-8/csb-gcp/index.html)</br></br>
+
+### Service Broker for Microsoft Azure
+Connector that lets apps access services running on Microsoft Azure</br>
+:floppy_disk: [Download](https://support.broadcom.com/group/ecx/productdownloads?subfamily=Tanzu%20Cloud%20Service%20Broker%20for%20Azure) &nbsp;&nbsp;|&nbsp;&nbsp; :book: [Docs](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform-services/tanzu-cloud-service-broker-for-microsoft-azure/1-12/csb-azure/index.html)</br></br>
+
+
+
 ## Other
 
 ### App Autoscaler
@@ -58,16 +73,6 @@ Allows scheduling the execution of Diego tasks (jobs), such as database migratio
 All-in-one solution for securing access to apps and APIs</br>
 :floppy_disk: [Download](https://support.broadcom.com/group/ecx/productdownloads?subfamily=Single%20Sign-On%20for%20VMware%20Tanzu%20Application%20Service ) &nbsp;&nbsp;|&nbsp;&nbsp; :book: [Docs](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform-services/single-sign-on-for-tanzu/1-16/sso-tanzu/index.html)</br></br>
 
-### Service Broker for AWS
-Connector that lets apps access services running on AWS
-:floppy_disk: [Download](https://support.broadcom.com/group/ecx/productdownloads?subfamily=Tanzu%20Cloud%20Service%20Broker%20for%20AWS) &nbsp;&nbsp;|&nbsp;&nbsp; :book: [Docs](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform-services/tanzu-cloud-service-broker-for-aws/1-14/csb-aws/index.html)</br></br>
 
-### Service Broker for GCP
-Connector that lets apps access services running on GCP
-:floppy_disk: [Download](https://support.broadcom.com/group/ecx/productdownloads?subfamily=Tanzu%20Cloud%20Service%20Broker%20for%20GCP) &nbsp;&nbsp;|&nbsp;&nbsp; :book: [Docs](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform-services/tanzu-cloud-service-broker-for-gcp/1-8/csb-gcp/index.html)</br></br>
-
-### Service Broker for Microsoft Azure
-Connector that lets apps access services running on Microsoft Azure
-:floppy_disk: [Download](https://support.broadcom.com/group/ecx/productdownloads?subfamily=Tanzu%20Cloud%20Service%20Broker%20for%20Azure) &nbsp;&nbsp;|&nbsp;&nbsp; :book: [Docs](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform-services/tanzu-cloud-service-broker-for-microsoft-azure/1-12/csb-azure/index.html)</br></br>
 
 
