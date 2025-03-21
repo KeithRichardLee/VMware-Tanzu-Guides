@@ -1,4 +1,4 @@
-# Tanzu Platform Marketplace Services Catalog
+# Tanzu Platform Marketplace Services
 
 
 ## AI Services
