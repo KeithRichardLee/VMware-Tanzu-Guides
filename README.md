@@ -10,4 +10,4 @@
 
 ## Tanzu Platform
 - [Tanzu Platform for Cloud Foundry getting started guide](/Tanzu-Platform/Tanzu-Platform-for-Cloud-Foundry-getting-started-guide.md)
-- [Tanzu Platform Marketplace Services](/Tanzu-Platform/Tanzu-Platform/Tanzu-Platform-Marketplace-Services.md)
+- [Tanzu Platform Marketplace Services](/Tanzu-Platform/Tanzu-Platform-Marketplace-Services.md)
