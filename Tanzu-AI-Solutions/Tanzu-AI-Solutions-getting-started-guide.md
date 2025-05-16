@@ -2,7 +2,7 @@
 
 A guide on how to quickly get up and running with [VMware Tanzu AI Solutions](https://www.vmware.com/solutions/app-platform/ai) with minimum resources on VMware vSphere.
 
-You can follow the manual steps below, or use this [script](https://github.com/KeithRichardLee/Tanzu-Platform-for-Cloud-Foundry-automated-install) that has automated all of below :raised_hands:
+You can follow the manual steps below, or use this [script](https://github.com/KeithRichardLee/Tanzu-GenAI-Platform-installer) that has automated all of below :raised_hands:
 
 ## High-level flow
 - Prepare env
@@ -16,15 +16,29 @@ You can follow the manual steps below, or use this [script](https://github.com/K
 - Learn more
 
 ## Prepare env
-ESXi host (ESXi v8.x) with the following spare capacity...
-- Compute
-  - approx 40 vCPU, although only uses approx 5 GHz
-- Memory
-  - approx 90 GB
-- Storage
-  - approx 400GB
+**VMware ESXi host/cluster (ESXi v7.x or v8.x) with the following spare capacity...**
+  - Compute: ~40 vCPU, although only uses approx 5 GHz
+  - Memory: ~100 GB
+  - Storage: ~400 GB
 
-GPU *
+**Networking**
+- IP addresses
+  - A subnet with approximately 15 free IP addresses including two static IP addresses
+    - 1x Tanzu Operations Manger
+    - 1x GoRouter 
+
+- DNS service
+  - 3 records created
+    - 1x VMware Tanzu Operations Manager eg opsman.tanzu.lab
+    - 1x Tanzu Platform system wildcard eg *.sys.tp.tanzu.lab which will resolve to the GoRouter IP
+    - 1x Tanzu Platfrom apps wildcard eg *.apps.tp.tanzu.lab which will resolve to the GoRouter IP
+
+- NTP service
+
+- Firewall
+  - Ability to reach ollama.com so Tanzu Platform can download AI models (Note: Airgapped is supported but not covered in this guide. Please see [here](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform-services/genai-on-tanzu-platform-for-cloud-foundry/10-0/ai-cf/tutorials-offline-model-support.html) for offline model support)
+
+**GPU * **
 - Nvidia Pascal architecture or later (Turing, Volta, Ampere, Ada Lovelace, Hopper, Blackwell) GPU with as much vram as possible! eg Tesla P100 / P40 / T4 / V100 / A100, RTX 20/30/40/50 series
   - Notes:
     - This guide has the steps for when using a "cheaper" consumer RTX GPU and using PCI passthrough (aka DirectPath I/O). Enterprise/Pro cards use NVIDIA vGPU and NVAIE instead of PCI passthrough. See [docs](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform-services/genai-on-tanzu-platform-for-cloud-foundry/10-0/ai-cf/tutorials-quickstart-vsphere.html) on how to configure the GenAI tile for vGPU/NVAIE and other requirements such as setting up a Nvidia license service.
@@ -39,22 +53,6 @@ GPU *
     - Record the "Device ID" and "Vendor ID" from the General Informance section. These ID's can be verifed at [Device Hunt](https://devicehunt.com)
   - Host > Configure > Hardaware > Graphics > Edit
     - Change device type to "Shared Direct"
-
-Networking
-- IP addresses
-  - A subnet with approximatly 20 free IP addresses (and has internet access so can download models from ollama. Airgapped is supported but not covered in this guide. Please see [here](https://techdocs.broadcom.com/us/en/vmware-tanzu/platform-services/genai-on-tanzu-platform-for-cloud-foundry/10-0/ai-cf/tutorials-offline-model-support.html) for offline model support)
-    - 1x Ops Man
-    - 1x BOSH Director
-    - 5x TPCF (Gorouter, blobstore, compute, control, database)
-    - 3x Postgres (broker, instances)
-    - 4x GenAI (controller, errand, workers)
-    - x various errands, compliations, workers
-- DNS service
-  - ops manager eg opsman.tanzu.lab
-  - system wildcard eg *.sys.tanzu.lab which will resolve to the gorouter IP
-  - apps wildcard eg *.apps.tanzu.lab which will resolve to the gorouter IP
-- NTP service
-
 
 
 ## Download bits
@@ -238,20 +236,8 @@ Congratualations you now have installed and configured Tanzu Platform for Cloud 
   - [Open WebUI](https://github.com/nkuhn-vmw/GenAI-for-TPCF-Samples/tree/main/open-webui-cf)
 
  
-## Optional tasks
-- [Agentic AI and MCP (Model Context Protocol) example with Tanzu Platform for Cloud Foundry](/Tanzu-AI-Solutions/Agentic-AI-and-MCP-example-with-Tanzu-Platform-for-Cloud-Foundry.md)
-- [Monitor GPU using nvtop](https://github.com/KeithRichardLee/VMware-Tanzu-Guides/blob/main/Tanzu-AI-Solutions/how-to-monitor-GPU-with-nvtop.md)
-- [Configure a Healthwatch Grafana dashboard](https://github.com/KeithRichardLee/VMware-Tanzu-Guides/blob/main/Tanzu-AI-Solutions/how-to-add-a-Healthwatch-Grafana-dashboard-for-Tanzu-AI-Solutions.md)
-
-
 ## Learn more
-- [VMware Tanzu AI Solutions landing page](https://www.vmware.com/solutions/app-platform/ai)
-- Blogs
-  - [What is AI Middleware, and Why You Need It to Safely Deliver AI Applications](https://blogs.vmware.com/tanzu/what-is-ai-middleware-and-why-you-need-it/)
-  - [Building AI Apps in 2025: Your Brilliant Ideas Deserve a Genius, Future-Proof Platform](https://blogs.vmware.com/tanzu/building-intelligent-apps-in-2025/)
-  - [It’s OK to ask why AI prototypes are not getting to production](https://blogs.vmware.com/tanzu/its-ok-to-ask-why-ai-prototypes-are-not-getting-to-production/)
-  - [Why Build GenAI Apps the Hard Way? Get an App Platform Instead!](https://blogs.vmware.com/tanzu/why-build-genai-apps-the-hard-way-get-an-app-platform-instead-2/)
-  - [Demystifying AI Integration with Cloud Foundry: A Spring AI Deep Dive](https://blogs.vmware.com/tanzu/demystifying-ai-integration-with-cloud-foundry-a-spring-ai-deep-dive/)
+- See [here](https://github.com/KeithRichardLee/VMware-Tanzu-Guides/blob/main/Tanzu-AI-Solutions/Tanzu-AI-Solutions-resources.md) for a collections resouces including website, solutions brief, blog posts, webinars, videos and more
 
 
 ## Appendix
