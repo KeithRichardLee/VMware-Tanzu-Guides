@@ -45,7 +45,7 @@ https://www.vmware.com/docs/vmware-tanzu-ai-solutions-for-genai-applications
 - [Mitigating Safety Risks with AI-Powered Applications](https://thenewstack.io/mitigating-safety-risks-with-ai-powered-applications/) - Aug 2024
 
 **RedMonk**
-- [What is AI Middleware? How to build AI-embedded applications with Tanzu AI Solutions](https://redmonk.com/videos/what-is-ai-middleware-how-to-build-ai-embedded-applications-with-tanzu-ai-solutions/)
+- [What is AI Middleware? How to build AI-embedded applications with Tanzu AI Solutions](https://redmonk.com/videos/what-is-ai-middleware-how-to-build-ai-embedded-applications-with-tanzu-ai-solutions/) - May 2025
 
 **JavaPro**
 - [Building AI-Driven Applications With Spring AI](https://javapro.io/2025/04/22/building-ai-driven-applications-with-spring-ai/) - Apr 2025
@@ -59,7 +59,7 @@ https://www.vmware.com/docs/vmware-tanzu-ai-solutions-for-genai-applications
 
 ### Other
 **RedMonk**
-- [What is AI Middleware? How to build AI-embedded applications with Tanzu AI Solutions](https://redmonk.com/videos/what-is-ai-middleware-how-to-build-ai-embedded-applications-with-tanzu-ai-solutions/)
+- [What is AI Middleware? How to build AI-embedded applications with Tanzu AI Solutions](https://redmonk.com/videos/what-is-ai-middleware-how-to-build-ai-embedded-applications-with-tanzu-ai-solutions/) - May 2025
 
 ## Videos
 
