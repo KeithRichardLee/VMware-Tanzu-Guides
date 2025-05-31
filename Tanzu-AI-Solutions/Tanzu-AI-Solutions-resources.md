@@ -34,6 +34,8 @@ https://www.vmware.com/docs/vmware-tanzu-ai-solutions-for-genai-applications
 - [Accelerate Delivery of Enterprise-Ready GenAI Apps with NEW Tanzu AI Solutions!](https://blogs.vmware.com/tanzu/enterprise-ready-genai-apps-with-tanzu-ai-solutions/) - Aug 2024
 
 **The New Stack**
+- [If AI Can Play Dungeons & Dragons, It Can Run Your ERP](https://thenewstack.io/if-ai-can-play-dungeons-dragons-it-can-run-your-erp/) - May 2025
+- [Spring AI 1.0 Released With Production-Worthy AI](https://thenewstack.io/production-worthy-ai-with-spring-ai-1-0/) - May 2025
 - [Shadow AI Isn’t a Threat: It’s a Wake-up Call](https://thenewstack.io/shadow-ai-isnt-a-threat-its-a-wake-up-call/) - May 2025
 - [Three Essential ROI Goals for Agentic AI Applications](https://thenewstack.io/three-essential-roi-goals-for-agentic-ai-applications/) - May 2025
 - [What Developers Need To Build Successful AI Apps](https://thenewstack.io/what-developers-need-to-build-successful-ai-apps/) - Apr 2025
@@ -42,14 +44,22 @@ https://www.vmware.com/docs/vmware-tanzu-ai-solutions-for-genai-applications
 - [Spring AI Transforms Java for GenAI App Delivery](https://thenewstack.io/spring-ai-transforms-java-for-genai-app-delivery/) - Sept 2024
 - [Mitigating Safety Risks with AI-Powered Applications](https://thenewstack.io/mitigating-safety-risks-with-ai-powered-applications/) - Aug 2024
 
+**RedMonk**
+- [What is AI Middleware? How to build AI-embedded applications with Tanzu AI Solutions](https://redmonk.com/videos/what-is-ai-middleware-how-to-build-ai-embedded-applications-with-tanzu-ai-solutions/)
+
 **JavaPro**
 - [Building AI-Driven Applications With Spring AI](https://javapro.io/2025/04/22/building-ai-driven-applications-with-spring-ai/) - Apr 2025
 - [Building AI-Driven Applications With Spring AI](https://javapro.io/de/entwicklung-von-ki-anwendungen-mit-spring-ai/) (German) - Apr 2025
 
 ## Webinars
+### VMware / Broadcom
 - [Racing Toward AI App Delivery with Tanzu](https://www.youtube.com/watch?v=c1QZXzJcAfQ) - Apr 2025
 - [AI FOMO?: Don't miss a Thing with AI and Spring](https://www.youtube.com/watch?v=_hB5u9ErYjM) - Aug 2024
 - [0 to Hero: GenAI for TAS and Spring AI ](https://www.brighttalk.com/webcast/14883/605970) - Feb 2024
+
+### Other
+**RedMonk**
+- [What is AI Middleware? How to build AI-embedded applications with Tanzu AI Solutions](https://redmonk.com/videos/what-is-ai-middleware-how-to-build-ai-embedded-applications-with-tanzu-ai-solutions/)
 
 ## Videos
 
@@ -59,7 +69,7 @@ https://www.vmware.com/docs/vmware-tanzu-ai-solutions-for-genai-applications
 - [Achieve Continuous Iteration for AI App Delivery](https://www.youtube.com/watch?v=lWAUensK-Dg) - Apr 2025
 - [Build an AI Agent with Tanzu Platform and Model Context Protocol](https://www.youtube.com/watch?v=WO8rF02J6XM) - Apr 2025
 
-### Other
+### Other 
 **CF Weekly** (video podcast by Nick Kuhn & guests)
 - [Is Cloud Foundry the Agentic AI Platform?](https://cloudfoundryweekly.com/episodes/is-cloud-foundry-the-agentic-ai-platform-cloud-foundry-weekly-ep-53) - Apr 2025
 - [Exploring Open WebUI MCP support & Debugging LLMs](https://cloudfoundryweekly.com/episodes/exploring-open-webui-mcp-support-debugging-llms-cloud-foundry-weekly-ep-52) - Apr 2025
