@@ -15,6 +15,8 @@ https://www.vmware.com/docs/vmware-tanzu-ai-solutions-for-genai-applications
 ## Blogs
 
 **VMware / Broadcom**
+- [Unlocking Real-Time Business Insights with Spring AI and VMware Tanzu GemFire](https://blogs.vmware.com/tanzu/unlocking-real-time-business-insights-with-spring-ai-and-vmware-tanzu-gemfire/) - June 2025
+- [Tanzu’s Spring AI Delivers Generative AI Capabilities to Enterprise Java Developers](https://blogs.vmware.com/tanzu/tanzus-spring-ai-delivers-generative-ai-capabilities-to-enterprise-java-developers/) - May 2025
 - [Agentic AI: A New AI Paradigm Driving Business Success](https://news.broadcom.com/leadership/agentic-ai-a-new-ai-paradigm-driving-business-success) - Apr 2025
 - [From POC to Profit: Rapid Iteration is the Key for Agentic Application ROI](https://blogs.vmware.com/tanzu/from-poc-to-profit-rapid-iteration-is-the-key-for-agentic-application-roi/) - Apr 2025
 - [Scalable Agentic Applications with Model Context Protocol (MCP)](https://blogs.vmware.com/tanzu/scalable-agentic-applications-with-model-context-protocol-mcp/) - Apr 2025
